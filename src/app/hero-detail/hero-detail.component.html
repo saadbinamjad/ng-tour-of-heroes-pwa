@@ -1,0 +1,19 @@
+<md-divider *ngIf="hero">
+	<md-card>
+	<md-card-header>
+	 <img md-card-avatar>
+	<md-card-title>{{hero.name}} details!</md-card-title>
+	<md-card-subtitle>
+	</md-card-subtitle>
+	</md-card-header>
+
+	<md-card-content>
+	<label>ID: {{hero.id}}</label>
+	<label>Name: </label>
+	<input [(ngModel)]="hero.name" placeholder="name"/>
+	</md-card-content>
+	</md-card>
+	<button (click)="goBack()">Back</button>
+	<button (click)="save()">Save</button>
+</md-divider>
+
