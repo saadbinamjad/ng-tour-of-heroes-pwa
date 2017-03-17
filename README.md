@@ -5,9 +5,15 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 Currently cli version is updated to  1.0.0-rc.0.
 
 ## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 "Run `json-server db.json` so to have a backend server."
+
+Run  "ng build --aot && gulp enhance"
+
+Then run the build app using live-server using the following command:
+
+"cd dist && live-server --port=4200 --host=localhost --entry-file=/index.html"
+
 
 
 ## Code scaffolding
